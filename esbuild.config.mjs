@@ -13,7 +13,7 @@ if you want to view the source, please visit the github repository of this plugi
 
 const prod = (process.argv[2] === 'production');
 
-esbuild.build({
+const context = await esbuild.context({
 	banner: {
 		js: banner,
 	},
@@ -32,4 +32,12 @@ esbuild.build({
 		  preprocess: sveltePreprocess(),
 		}),
 	  ],
-}).catch(() => process.exit(1));
+});
+
+if (prod) {
+	await context.rebuild();
+	process.exit(0);
+} else {
+	await context.watch();
+}
+

@@ -2,9 +2,9 @@
 	"id": "quartzpublish",
 	"name": "Quartz Publish",
 	"version": "1.0.0",
-	"minAppVersion": "1.8.9",
+	"minAppVersion": "0.15.0",
 	"description": "Publish your notes to the web by github. For free.",
 	"author": "GivenCui",
 	"authorUrl": "blog.givencui.com",
-	"isDesktopOnly": false,
+	"isDesktopOnly": false
 }

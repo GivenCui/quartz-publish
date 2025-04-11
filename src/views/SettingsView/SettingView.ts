@@ -73,7 +73,7 @@ export default class SettingView {
 		this.settingsRootElement.empty();
 
 		this.settingsRootElement.createEl("h1", {
-			text: "Digital Garden Settings",
+			text: "Quartz Publish Settings",
 		});
 
 		const linkDiv = this.settingsRootElement.createEl("div", {
@@ -81,7 +81,7 @@ export default class SettingView {
 		});
 
 		linkDiv.createEl("span", {
-			text: "Remember to read the setup guide if you haven't already. It can be found ",
+			text: "Remember to read the setup guide if you haven't already. It can be found",
 		});
 
 		linkDiv.createEl("a", {

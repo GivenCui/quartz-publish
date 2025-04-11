@@ -17,8 +17,11 @@ export interface MarkedForPublishing {
 	images: string[];
 }
 
-export const IMAGE_PATH_BASE = "src/site/img/user/";
-export const NOTE_PATH_BASE = "src/site/notes/";
+// export const IMAGE_PATH_BASE = "src/site/img/user/";
+// export const NOTE_PATH_BASE = "src/site/notes/";
+// TODO: 希望可以在UI中自定义设置
+export const IMAGE_PATH_BASE = "content/attachments/";
+export const NOTE_PATH_BASE = "content/";
 
 /**
  * Prepares files to be published and publishes them to Github

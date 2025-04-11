@@ -43,7 +43,7 @@ export class FrontmatterCompiler {
 		delete fileFrontMatter["position"];
 
 		let publishedFrontMatter: TPublishedFrontMatter = {
-			"dg-publish": true,
+			"quartz-publish": true,
 		};
 
 		publishedFrontMatter = this.addPermalink(
